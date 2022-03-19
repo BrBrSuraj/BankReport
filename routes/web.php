@@ -57,10 +57,11 @@ Route::group(['middleware' => 'auth'], function () {
         return view('home', compact('customer', 'loanAmount', 'dueAmount', 'paidIntrestAmount', 'paidLoanAmount', 'totalPaid', 'installment'));
     })->name('/home');
 
-    // user profile information
+    // user profile information & update password
     Route::get('userprofile/{id}', [UserProfileController::class, 'userprofile'])->name('userprofile');
-    Route::match(['get','post','patch'], 'userpassword/{user}', [UserProfileController::class, 'updatePassword'])->name('userpassword');
+    Route::match(['get', 'post', 'patch'], 'userpassword/{user}', [UserProfileController::class, 'updatePassword'])->name('userpassword');
 
+    // for report and generate report as pdf
     Route::get('report', [ReportController::class, 'report'])->name('report');
     Route::post('loanreport', [ReportController::class, 'loanreport'])->name('loanreport');
     Route::get('exportpdf/{fiscalYear}', [ExportController::class, 'exportpdf'])->name('exportpdf');
@@ -87,5 +88,3 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('loan', LoanController::class);
     Route::resource('financial', FinancialController::class);
 });
-
-

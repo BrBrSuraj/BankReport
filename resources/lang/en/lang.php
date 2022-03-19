@@ -123,6 +123,7 @@ return [
     'domain'=>'Enter Domain',
     'confirmPassword'=> 'Confirm Password',
     'newPassword'=>'New Password',
+    'Loan'=>'Loan',
 
 
 ];

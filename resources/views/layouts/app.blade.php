@@ -25,7 +25,7 @@
 
     </style>
     @livewireStyles
-    @powerGridStyles
+ 
 </head>
 @auth
 

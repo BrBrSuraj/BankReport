@@ -125,5 +125,6 @@ return [
     'domain' => 'डोमेन',
     'confirmPassword' => 'उस्तै पासवर्ड प्रविष्टि',
     'newPassword' => 'नँया पासवर्ड प्रविष्टि',
+    'Loan' => 'ऋण',
 
 ];

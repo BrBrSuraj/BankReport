@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header text-bold text-success" style="background-color:#3C4B64">
+        <div class="card-header text-bold text-white" style="background-color:#3C4B64">
               <h4>{{ __('lang.createNewUser') }}</h4>
             <span class="text-success">
                 @if (session('success'))

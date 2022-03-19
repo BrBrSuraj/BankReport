@@ -24,7 +24,7 @@
             </div>
 
             <div class="col-md-3 ol-sm-12">
-                <div class="card text-white bg-warning mb-3 card-sm" style="max-width: 18rem;">
+                <div class="card text-dark bg-warning mb-3 card-sm" style="max-width: 18rem;">
                     <div class="card-header"><i class="bi bi-cash-stack"> {{ __('lang.Installment') }}</i></div>
                     <div class="card-body">
                         <p class="card-title" style="font-size:15px;">{{ __('lang.totalInstallment') }}:
